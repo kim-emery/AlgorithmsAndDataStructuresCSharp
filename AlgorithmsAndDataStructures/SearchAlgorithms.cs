@@ -58,6 +58,15 @@ namespace AlgorithmsAndDataStructures {
                 Debug.WriteLine("Element found at index " + result);
             }
 
+
+            int[] arrayToMergeSort = {10, 12, 6, 3, 4, 9, 5, 3, 2, 2, 34, 6, 8, 45};
+            int size = arrayToMergeSort.Length;
+            
+            MergeSortAlgorithms.MergeSort(arrayToMergeSort, 0, size - 1);
+
+            Debug.WriteLine(arrayToMergeSort);
+
+            Debug.WriteLine("[{0}]", string.Join(", ", arrayToMergeSort));
         }
     }
 }
